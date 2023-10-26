@@ -14,8 +14,15 @@ header {
     background-color: #000000;
 }
 
+.final-site{
+    margin-top: 100px;
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+}
+
 .container {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -41,6 +48,11 @@ nav a {
     color: #7890a8
 }
 
+.descricao-loja  img{
+    max-width: 100%;
+    height: auto;
+}
+
 .conteudo {
     display: block;
 }
@@ -63,6 +75,7 @@ h4{
 
 article img{
     width: 100%;
+    height: 340px;
     margin: 1em 0 0.5em 0;
 }
 
@@ -76,4 +89,51 @@ article img{
     font-size: 22px;
     padding: 0.5rem 0;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav{
+        flex-direction: row;
+    }
+
+    nav a{
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+    
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    }
+
+    .produto{
+        padding: 1%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .produto{
+        padding: 2%;
+    }
+
+    article img{
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
